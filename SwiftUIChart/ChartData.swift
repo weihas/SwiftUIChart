@@ -32,7 +32,7 @@ public class ChartData: Identifiable {
         self.valuesGiven = true
     }
     
-    public func onlyPoints() -> [Double] {
-        return self.points.map{ $0.1 }
+    var pointValues: [Double]{
+        return points.map({$0.value})
     }
 }

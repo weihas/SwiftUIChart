@@ -17,6 +17,9 @@
 		351C6E19275C9C9300A63A60 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E18275C9C9300A63A60 /* BarChartView.swift */; };
 		351C6E1B275C9CDF00A63A60 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E1A275C9CDF00A63A60 /* ChartData.swift */; };
 		351C6E1D275CA4F300A63A60 /* LableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E1C275CA4F300A63A60 /* LableView.swift */; };
+		35944551275D088D000837A2 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35944550275D088D000837A2 /* IndicatorPoint.swift */; };
+		35944554275D0904000837A2 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35944553275D0904000837A2 /* Legend.swift */; };
+		35944556275D187F000837A2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35944555275D187F000837A2 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		351C6E18275C9C9300A63A60 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		351C6E1A275C9CDF00A63A60 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		351C6E1C275CA4F300A63A60 /* LableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableView.swift; sourceTree = "<group>"; };
+		35944550275D088D000837A2 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		35944553275D0904000837A2 /* Legend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		35944555275D187F000837A2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 				351C6E05275C8B6600A63A60 /* ContentView.swift */,
 				351C6E17275C978300A63A60 /* BarChart */,
 				351C6E1A275C9CDF00A63A60 /* ChartData.swift */,
+				35944552275D0894000837A2 /* LineChart */,
 				351C6E13275C8BDE00A63A60 /* Helpers.swift */,
 				351C6E07275C8B6700A63A60 /* Assets.xcassets */,
 				351C6E09275C8B6700A63A60 /* Preview Content */,
@@ -91,6 +98,16 @@
 				351C6E1C275CA4F300A63A60 /* LableView.swift */,
 			);
 			path = BarChart;
+			sourceTree = "<group>";
+		};
+		35944552275D0894000837A2 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				35944550275D088D000837A2 /* IndicatorPoint.swift */,
+				35944553275D0904000837A2 /* Legend.swift */,
+				35944555275D187F000837A2 /* Line.swift */,
+			);
+			path = LineChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +182,15 @@
 			files = (
 				351C6E12275C8B9E00A63A60 /* BarChartCell.swift in Sources */,
 				351C6E06275C8B6600A63A60 /* ContentView.swift in Sources */,
+				35944551275D088D000837A2 /* IndicatorPoint.swift in Sources */,
 				351C6E04275C8B6600A63A60 /* SwiftUIChartApp.swift in Sources */,
 				351C6E16275C977000A63A60 /* BarChartRow.swift in Sources */,
 				351C6E1B275C9CDF00A63A60 /* ChartData.swift in Sources */,
 				351C6E1D275CA4F300A63A60 /* LableView.swift in Sources */,
 				351C6E14275C8BDE00A63A60 /* Helpers.swift in Sources */,
 				351C6E19275C9C9300A63A60 /* BarChartView.swift in Sources */,
+				35944556275D187F000837A2 /* Line.swift in Sources */,
+				35944554275D0904000837A2 /* Legend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
