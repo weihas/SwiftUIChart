@@ -11,6 +11,12 @@
 		351C6E06275C8B6600A63A60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E05275C8B6600A63A60 /* ContentView.swift */; };
 		351C6E08275C8B6700A63A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351C6E07275C8B6700A63A60 /* Assets.xcassets */; };
 		351C6E0B275C8B6700A63A60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 351C6E0A275C8B6700A63A60 /* Preview Assets.xcassets */; };
+		351C6E12275C8B9E00A63A60 /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E11275C8B9E00A63A60 /* BarChartCell.swift */; };
+		351C6E14275C8BDE00A63A60 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E13275C8BDE00A63A60 /* Helpers.swift */; };
+		351C6E16275C977000A63A60 /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E15275C977000A63A60 /* BarChartRow.swift */; };
+		351C6E19275C9C9300A63A60 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E18275C9C9300A63A60 /* BarChartView.swift */; };
+		351C6E1B275C9CDF00A63A60 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E1A275C9CDF00A63A60 /* ChartData.swift */; };
+		351C6E1D275CA4F300A63A60 /* LableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C6E1C275CA4F300A63A60 /* LableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		351C6E05275C8B6600A63A60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		351C6E07275C8B6700A63A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		351C6E0A275C8B6700A63A60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		351C6E11275C8B9E00A63A60 /* BarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		351C6E13275C8BDE00A63A60 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		351C6E15275C977000A63A60 /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		351C6E18275C9C9300A63A60 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		351C6E1A275C9CDF00A63A60 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		351C6E1C275CA4F300A63A60 /* LableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,9 @@
 			children = (
 				351C6E03275C8B6600A63A60 /* SwiftUIChartApp.swift */,
 				351C6E05275C8B6600A63A60 /* ContentView.swift */,
+				351C6E17275C978300A63A60 /* BarChart */,
+				351C6E1A275C9CDF00A63A60 /* ChartData.swift */,
+				351C6E13275C8BDE00A63A60 /* Helpers.swift */,
 				351C6E07275C8B6700A63A60 /* Assets.xcassets */,
 				351C6E09275C8B6700A63A60 /* Preview Content */,
 			);
@@ -65,6 +80,17 @@
 				351C6E0A275C8B6700A63A60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		351C6E17275C978300A63A60 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				351C6E11275C8B9E00A63A60 /* BarChartCell.swift */,
+				351C6E15275C977000A63A60 /* BarChartRow.swift */,
+				351C6E18275C9C9300A63A60 /* BarChartView.swift */,
+				351C6E1C275CA4F300A63A60 /* LableView.swift */,
+			);
+			path = BarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351C6E12275C8B9E00A63A60 /* BarChartCell.swift in Sources */,
 				351C6E06275C8B6600A63A60 /* ContentView.swift in Sources */,
 				351C6E04275C8B6600A63A60 /* SwiftUIChartApp.swift in Sources */,
+				351C6E16275C977000A63A60 /* BarChartRow.swift in Sources */,
+				351C6E1B275C9CDF00A63A60 /* ChartData.swift in Sources */,
+				351C6E1D275CA4F300A63A60 /* LableView.swift in Sources */,
+				351C6E14275C8BDE00A63A60 /* Helpers.swift in Sources */,
+				351C6E19275C9C9300A63A60 /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +309,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
