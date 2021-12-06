@@ -9,47 +9,33 @@ import SwiftUI
 
 public struct Line: View {
     var data: ChartData
-    @Binding var frame: CGRect
-    @Binding var touchLocation: CGPoint
-    @Binding var showIndicator: Bool
-    @Binding var minDataValue: Double?
-    @Binding var maxDataValue: Double?
+    var touchLocation: CGPoint
+    var showIndicator: Bool
+    
     @State private var showFull: Bool = false
     @State var showBackground: Bool = true
     var gradient: GradientColor = GradientColor(.purple, .blue)
-    var index:Int = 0
-    let padding:CGFloat = 30
+    var index: Int = 0
+    let padding: CGFloat = 30
     var curvedLines: Bool = true
-    var stepWidth: CGFloat {
-        if data.points.count < 2 {
-            return 0
-        }
-        return frame.size.width / CGFloat(data.points.count-1)
-    }
-    var stepHeight: CGFloat {
-        var min: Double?
-        var max: Double?
-        let points = self.data.pointValues
-        if minDataValue != nil && maxDataValue != nil {
-            min = minDataValue!
-            max = maxDataValue!
-        }else if let minPoint = points.min(), let maxPoint = points.max(), minPoint != maxPoint {
-            min = minPoint
-            max = maxPoint
-        }else {
-            return 0
-        }
-        if let min = min, let max = max, min != max {
-            if (min <= 0){
-                return (frame.size.height-padding) / CGFloat(max - min)
-            }else{
-                return (frame.size.height-padding) / CGFloat(max - min)
+    
+    struct CurveLine: Shape {
+        var points: [Double]
+        
+        
+        func path(in rect: CGRect) -> Path {
+            let p = Path()
+            p.move(to:  CGPoint(x: rect.minX, y: (1-(points.first - min)/(max - min)) * rect.height))
+            
+            for point in points {
+                p.addQuadCurve(to: <#T##CGPoint#>, control: <#T##CGPoint#>)
             }
         }
-        return 0
     }
+    
     var path: Path {
         let points = self.data.pointValues
+        Path
         return curvedLines ? Path.quadCurvedPathWithPoints(points: points, step: CGPoint(x: stepWidth, y: stepHeight), globalOffset: minDataValue) : Path.linePathWithPoints(points: points, step: CGPoint(x: stepWidth, y: stepHeight))
     }
     var closedPath: Path {
